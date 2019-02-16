@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Your Recent Purchase</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+</head>
+<body>
+    <div id="container">
+        <div id="form-wrapper">
+            <div id="title">
+                <h1>Your Recent Purchase</h1>
+            </div>
+            <div id="description">
+                <p>Tell us more about your recent purchase!</p>
+            </div>
+            <form id="survey-form">
+                <label id="name-label" for="name">
+                Your Full Name:<br><input required type="text" name="name" placeholder="Enter your name..."></label>
+                <label id="email-label" for="email">
+                Your E-mail Address:<br><input required type="text" name="email" placeholder="you@email.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"></label>
+                <label id="number-label" for="number">
+                Your Phone Number:<br><input required type="text" name="number" placeholder="(07) 3000 0000" pattern="[0-9()\s]{12,}"></label>
+                <label id="radio-label">What did you purchase?</label>
+                <label id="radio-label" for="radio"><input required type="radio" name="radio">
+                An inflatable dolphin
+                </label>
+                <label id="radio-label" for="radio"><input required type="radio" name="radio">
+                A HDMI cable
+                </label>
+                <label id="radio-label" for="radio"><input required type="radio" name="radio">
+                Monopoly board game
+                </label>
+                <br>
+                <label id="check-label">Please check all that apply:</label>
+                <label id="check-label" for="check"><input required type="checkbox" name="checkbox">
+                The purchase suited my needs
+                </label>
+                <label id="check-label" for="check"><input required type="checkbox" name="checkbox">
+                The purchase was delivered in a timely manner
+                </label>
+                <label id="check-label" for="check"><input required type="checkbox" name="checkbox">
+                I would recommend this purchase
+                </label>
+                <br>
+                <label id="dropdown">How satisfied were you with your purchase?</label>
+                <select id="dropdown">
+                    <option selected disabled hidden>---</option>
+                    <option value="option-1">Very Satisfied</option>
+                    <option value="option-2">Satisfied</option>
+                    <option value="option-3">Neither</option>
+                    <option value="option-4">Unsatisfied</option>
+                    <option value="option-5">Very Unsatisfied</option>
+                </select>
+                <label id="textarea">Any other comments, suggestions or feedback?</label>
+                <textarea placeholder="Type your message..."></textarea>
+                <input id="submit" type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+</body>
+</html>
